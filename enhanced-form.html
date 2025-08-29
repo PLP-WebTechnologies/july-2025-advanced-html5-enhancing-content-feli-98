@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Food Page</title>
+</head>
+<body>
+    <h1>My Simple Food Page</h1>
+
+    <!--My Food Menu -->
+    <h2>Today's Menu</h2>
+    <table style="border: 1px solid black; border-collapse: collapse;"></table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Spaghetti Bolognese</td>
+                <td>$12.99</td>
+                <td>Classic meat sauce with fresh herbs.</td>
+            </tr>
+            <tr>
+                <td>Caesar Salad</td>
+                <td>$8.50</td>
+                <td>Crisp romaine lettuce with a creamy Caesar dressing.</td>
+            </tr>
+            <tr>
+                <td>Pizza Margherita</td>
+                <td>$15.00</td>
+                <td>Fresh mozzarella, basil, and tomato sauce.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- My Grocery Shopping List -->
+    <h2>My Shopping List</h2>
+    <ul>
+        <li>Tomatoes</li>
+        <li>Onions</li>
+        <li>Pasta</li>
+        <li>Ground Beef</li>
+    </ul>
+
+    <!-- Insert Image -->
+    <h2>A Delicious Pizza!</h2>
+    <img src="pizza.jpg" alt="A delicious pizza" width="400">
+    <p>This pizza is topped with fresh basil, mozzarella, and a rich tomato sauce.</p>
+
+<!-- Order Form -->
+    <h1>Order Form</h1>
+    <form action="#" method="post">
+
+        <!-- Customer Information -->
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Feli Mukiri">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="mukirifeli@example.com">
+        </fieldset>
+        <br>
+
+        <!-- Order Details -->
+        <fieldset>
+            <legend>Your Order</legend>
+            <p>Choose your dish:</p>
+            <input type="radio" id="spaghetti" name="dish" value="spaghetti" required>
+            <label for="spaghetti">Spaghetti Bolognese</label><br>
+            <input type="radio" id="salad" name="dish" value="salad">
+            <label for="salad">Caesar Salad</label><br>
+            <input type="radio" id="pizza" name="dish" value="pizza">
+            <label for="pizza">Pizza Margherita</label><br><br>
+
+            <label for="instructions">Special Instructions:</label><br>
+            <textarea id="instructions" name="instructions" rows="4" cols="30" placeholder="Any preferences..."></textarea>
+        </fieldset>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit">Place Order</button>
+    </form>
+</body>
+</html>
